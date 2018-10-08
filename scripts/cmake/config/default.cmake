@@ -631,7 +631,7 @@ set(LWIP_URL "http://download.savannah.nongnu.org/releases/lwip/lwip-2.1.0.zip"
     "LWIP URL"
 )
 
-set(LWIP_URL_MD5 "0cc95192658d10e43162ef7b2892e37a"
+set(LWIP_URL_MD5 "47e8443c4899dbcb3da423cd271d5f67"
     CACHE INTERNAL FORCE
     "LWIP URL MD5 hash"
 )
@@ -641,7 +641,7 @@ set(GSL_URL "https://github.com/Bareflank/gsl/archive/v2.0.zip"
     "GSL URL"
 )
 
-set(GSL_URL_MD5 "359dc13381927d5a13037e8b7fecf95f"
+set(GSL_URL_MD5 "0cc95192658d10e43162ef7b2892e37a"
     CACHE INTERNAL FORCE
     "GSL URL MD5 hash"
 )

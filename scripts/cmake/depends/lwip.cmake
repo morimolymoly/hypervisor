@@ -26,20 +26,26 @@ if(ENABLE_BUILD_VMM OR ENABLE_BUILD_USERSPACE OR ENABLE_BUILD_TEST)
     )
 endif()
 
+list(APPEND LWIP_CONFIGURE_FLAGS
+)
+
 if(ENABLE_BUILD_VMM OR ENABLE_BUILD_TEST)
     add_dependency(
         lwip vmm
+        CMAKE_ARGS  ${LWIP_CONFIGURE_FLAGS}
     )
 endif()
 
 if(ENABLE_BUILD_USERSPACE)
     add_dependency(
         lwip userspace
+        CMAKE_ARGS  ${LWIP_CONFIGURE_FLAGS}
     )
 endif()
 
 if(ENABLE_BUILD_TEST)
     add_dependency(
         lwip test
+        CMAKE_ARGS  ${LWIP_CONFIGURE_FLAGS}
     )
 endif()

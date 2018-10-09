@@ -33,6 +33,7 @@ if(ENABLE_BUILD_VMM OR ENABLE_BUILD_TEST)
     add_dependency(
         lwip vmm
         CMAKE_ARGS  ${LWIP_CONFIGURE_FLAGS}
+        INSTALL_COMMAND    ""
     )
 endif()
 
@@ -40,6 +41,7 @@ if(ENABLE_BUILD_USERSPACE)
     add_dependency(
         lwip userspace
         CMAKE_ARGS  ${LWIP_CONFIGURE_FLAGS}
+        INSTALL_COMMAND    ""
     )
 endif()
 
@@ -47,5 +49,6 @@ if(ENABLE_BUILD_TEST)
     add_dependency(
         lwip test
         CMAKE_ARGS  ${LWIP_CONFIGURE_FLAGS}
+        INSTALL_COMMAND     ""
     )
 endif()
